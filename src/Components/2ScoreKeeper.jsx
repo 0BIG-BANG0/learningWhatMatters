@@ -25,6 +25,7 @@ function ScoreKeeper() {
 
     console.log(results);
   };
+  
   return (
     <div className="w-full h-screen bg-zinc-800 text-white text-center ">
       <h1 className="pt-10 text-5xl py-10 font-semibold font-mono">
@@ -48,7 +49,10 @@ function ScoreKeeper() {
         <h2>Ball-wise Results: </h2>
         <div>
           {results.map((results, index) => (
-            <div>{results}</div>
+            <>
+            {index %6 ===0 ? <br /> : null}
+            <span key={index} className="px-2">{results === 0 ? <strong>0️⃣</strong> : results}</span>
+            </>
           ))}
         </div>
       </div>
