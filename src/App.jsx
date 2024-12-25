@@ -5,6 +5,7 @@ import CNJsx from './Components/1CNJsx.jsx';
 import ScoreKeeper from './Components/2ScoreKeeper.jsx';
 import FavouriteFood from './Components/Assingment/1_ScoreKeep.jsx/1.FavouriteFood.jsx';
 import DynamicUserCard from './Components/Assingment/1_ScoreKeep.jsx/2.DynamicUserCard.jsx';
+import Forms from './Components/Assingment/1_ScoreKeep.jsx/3.Forms.jsx';
 
 function App() {
   const [count , setCount] = useState(0); 
@@ -30,7 +31,8 @@ function App() {
     {/* <CNJsx/> */}
     {/* <ScoreKeeper/> */}
     {/* <FavouriteFood/> */}
-    <DynamicUserCard/>
+    {/* <DynamicUserCard/> */}
+    <Forms/>
     
     </>
   )
