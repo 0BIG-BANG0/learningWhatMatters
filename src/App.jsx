@@ -3,6 +3,7 @@ import Products from './Products.jsx'
 import Name from './Name.jsx';
 import CNJsx from './Components/1CNJsx.jsx';
 import ScoreKeeper from './Components/2ScoreKeeper.jsx';
+import FavouriteFood from './Components/Assingment/1_ScoreKeep.jsx/1.FavouriteFood.jsx';
 
 function App() {
   const [count , setCount] = useState(0); 
@@ -26,7 +27,8 @@ function App() {
 
     {/* Learning JSX */}
     {/* <CNJsx/> */}
-    <ScoreKeeper/>
+    {/* <ScoreKeeper/> */}
+    <FavouriteFood/>
     </>
   )
 }
