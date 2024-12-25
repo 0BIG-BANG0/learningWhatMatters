@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function FavouriteFood() {
     const food = {
@@ -28,7 +28,7 @@ function FavouriteFood() {
             "https://res.cloudinary.com/dl26pbek4/image/upload/v1672294935/assets/mario-raj-ysmeQt1dzcw-unsplash_ivdvre.jpg",
         },
       };
-      let favouriteFood;
+      let favouriteFood [fastFood,setFood] = useState("")
 
       // Task: Refactor to create a single handleFoodClick function that works for all items
 
@@ -61,13 +61,38 @@ function FavouriteFood() {
         </div>
       );
   return (
-    <div>
-      <div className="favourite-food">
-          <span>Your favourite food is:</span>
-          <h3>{favouriteFood.name}</h3>
-          <img src={favouriteFood.image} />
-        </div>
+    <div className="App">
+    {/* Hint: Use logical && to render FavouriteFood only if favouriteFood is defined */}
+    {/* Write code here to render the FavouriteFood component conditionally */}
+    <h2>Select your favourite food</h2>
+    <div className="food-list">
+      {/* Refactor the onClick handlers below to use a single handler function */}
+      <div onClick={handlePizzaClick}>
+        <h3>{food.pizza.name}</h3>
+        <img src={food.pizza.image} />
+      </div>
+
+      <div onClick={handleBurgerClick}>
+        <h3>{food.burger.name}</h3>
+        <img src={food.burger.image} />
+      </div>
+
+      <div onClick={handlePastaClick}>
+        <h3>{food.pasta.name}</h3>
+        <img src={food.pasta.image} />
+      </div>
+
+      <div onClick={handleSushiClick}>
+        <h3>{food.sushi.name}</h3>
+        <img src={food.sushi.image} />
+      </div>
+
+      <div onClick={handleChickenBiryaniClick}>
+        <h3>{food.chickenBiryani.name}</h3>
+        <img src={food.chickenBiryani.image} />
+      </div>
     </div>
+  </div>
   )
 }
 
