@@ -6,6 +6,8 @@ import ScoreKeeper from './Components/2ScoreKeeper.jsx';
 import FavouriteFood from './Components/Assingment/1_ScoreKeep.jsx/1.FavouriteFood.jsx';
 import DynamicUserCard from './Components/Assingment/1_ScoreKeep.jsx/2.DynamicUserCard.jsx';
 import Forms from './Components/Assingment/1_ScoreKeep.jsx/3.Forms.jsx';
+import QuotifyApp from './Components/Assingment/1_ScoreKeep.jsx/4.QuotifyApp.jsx';
+import CMT from './Components/Assingment/1_ScoreKeep.jsx/5.CMT.jsx';
 
 function App() {
   const [count , setCount] = useState(0); 
@@ -32,7 +34,9 @@ function App() {
     {/* <ScoreKeeper/> */}
     {/* <FavouriteFood/> */}
     {/* <DynamicUserCard/> */}
-    <Forms/>
+    {/* <Forms/> */}
+    {/* <QuotifyApp/> */}
+    <CMT/>
     
     </>
   )
